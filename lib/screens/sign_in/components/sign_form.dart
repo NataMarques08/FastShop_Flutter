@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../../components_ui/colors_app.dart';
 import '../../../components_ui/default_button.dart';

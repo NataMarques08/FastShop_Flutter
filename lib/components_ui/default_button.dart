@@ -7,7 +7,6 @@ import 'colors_app.dart';
 
 // ignore: must_be_immutable
 class DefaultButton extends StatelessWidget {
-
   const DefaultButton({
     Key? key,
     required this.texto,
@@ -16,28 +15,24 @@ class DefaultButton extends StatelessWidget {
 
   final String texto;
   final Function? press;
- 
-
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       height: getProportionateScreenHeight(56),
-      child:  ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: kPrimaryColor,
-            
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: kPrimaryColor,
+        ),
+        onPressed: press as void Function()?,
+        child: Text(
+          texto,
+          style: TextStyle(
+            fontSize: getProportionateScreenHeight(20),
           ),
-          onPressed: press as void Function()?, 
-          child: Text(
-            texto,
-            style: TextStyle(
-              fontSize: getProportionateScreenHeight(20),
-            
-              ),
-          ),
-          ),
+        ),
+      ),
     );
   }
 }
