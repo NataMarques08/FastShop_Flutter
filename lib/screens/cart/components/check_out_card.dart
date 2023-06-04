@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../components_ui/colors_app.dart';
-import '../../components_ui/default_button.dart';
-import '../../components_ui/size_config.dart';
+import '../../../components_ui/colors_app.dart';
+import '../../../components_ui/default_button.dart';
+import '../../../components_ui/size_config.dart';
 
 class CheckoutCard extends StatelessWidget {
   const CheckoutCard({

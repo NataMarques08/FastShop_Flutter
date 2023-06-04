@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/Cart.dart';
+import '../../components_ui/colors_app.dart';
+import '../../models/Cart.dart';
 import 'components/body.dart';
 import 'components/check_out_card.dart';
 
@@ -12,17 +13,18 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: const Body(),
-      bottomNavigationBar: CheckoutCard(),
+      bottomNavigationBar: const CheckoutCard(),
     );
   }
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
+      backgroundColor: kPrimaryColor,
       title: Column(
         children: [
           const Text(
             "Your Cart",
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: kPrimaryLightColor),
           ),
           Text(
             "${demoCarts.length} items",

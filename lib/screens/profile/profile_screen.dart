@@ -1,3 +1,4 @@
+import 'package:fastshop/components_ui/colors_app.dart';
 import 'package:flutter/material.dart';
 import '../../components_ui/coustom_bottom_nav_bar.dart';
 import '../../enums.dart';
@@ -12,6 +13,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Profile"),
+        backgroundColor: kPrimaryColor,
       ),
       body: Body(),
       bottomNavigationBar:
