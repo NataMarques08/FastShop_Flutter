@@ -30,7 +30,7 @@ class _BodyState extends State<Body> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Flashop',
+                  'Fastshop',
                   style: TextStyle(
                       fontSize: getProportionateScreenHeight(58),
                       fontWeight: FontWeight.bold,
